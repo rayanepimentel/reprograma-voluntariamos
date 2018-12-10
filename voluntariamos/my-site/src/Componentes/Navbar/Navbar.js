@@ -11,6 +11,7 @@ import {
   DropdownToggle,
   DropdownMenu,
   DropdownItem } from 'reactstrap';
+  import './Navbar.css'
 
  class Cabecalho extends React.Component {
   constructor(props) {

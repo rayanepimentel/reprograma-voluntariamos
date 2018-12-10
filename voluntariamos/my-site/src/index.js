@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
-import Home from './Home/Home'
-import Sobre from './Sobre/Sobre'
+import Home from './Paginas/Home/Home'
+import Sobre from './Paginas/Sobre/Sobre'
 
-import Eventos from './Eventos/Ativos/Ativos'
+import Eventos from './Paginas/Eventos/Ativos/Ativos'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Cabecalho from './Componentes/Navbar/Navbar'
