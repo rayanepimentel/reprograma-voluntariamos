@@ -46,14 +46,14 @@ import {
                   EVENTOS
                 </DropdownToggle>
                 <DropdownMenu right>
-                  <DropdownItem>
+                  <DropdownItem href='/Divulgue'>
                     DIVULGUE
                   </DropdownItem>
-                  <DropdownItem>
+                  <DropdownItem href='/Assine'>
                     ASSINE
-                  </DropdownItem>
+                  </DropdownItem >
                   <DropdownItem divider />
-                  <DropdownItem>
+                  <DropdownItem href='/Ativos'>
                     ATIVOS
                   </DropdownItem>
                 </DropdownMenu>
