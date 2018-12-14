@@ -7,10 +7,7 @@ import {
   Nav,
   NavItem,
   NavLink,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem } from 'reactstrap';
+  } from 'reactstrap';
   import './Navbar.css'
 
  class Cabecalho extends React.Component {
@@ -41,23 +38,13 @@ import {
               <NavItem>
                 <NavLink href="/Sobre">SOBRE</NavLink>
               </NavItem>
-              <UncontrolledDropdown nav inNavbar>
-                <DropdownToggle nav caret>
-                  EVENTOS
-                </DropdownToggle>
-                <DropdownMenu right>
-                  <DropdownItem href='/Divulgue'>
-                    DIVULGUE
-                  </DropdownItem>
-                  <DropdownItem href='/Assine'>
-                    ASSINE
-                  </DropdownItem >
-                  <DropdownItem divider />
-                  <DropdownItem href='/Ativos'>
-                    ATIVOS
-                  </DropdownItem>
-                </DropdownMenu>
-              </UncontrolledDropdown>
+              <NavItem>
+                <NavLink href="/Ativos">EVENTOS</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink href="/Assine">CONTATO</NavLink>
+              </NavItem>
+            
             </Nav>
           </Collapse>
         </Navbar>
