@@ -1,69 +1,68 @@
 import React from 'react';
 import { Col, Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import './Formulario.css'
 
 export default class Formulario extends React.Component {
   render() {
     return (
-      <Form>
+      <Form className='form'>
+      <FormGroup row> 
+      <Label className='destaque'>Entre em contato</Label>
+      </FormGroup>
         <FormGroup row>
           <Label for="exampleEmail" sm={2}>Email</Label>
           <Col sm={10}>
-            <Input type="email" name="email" id="exampleEmail" placeholder="with a placeholder" />
+            <Input type="email" name="email" id="exampleEmail" placeholder="Seu e-mail" />
           </Col>
         </FormGroup>
         <FormGroup row>
-          <Label for="name" sm={2}>Password</Label>
+          <Label for="name" sm={2}>Nome</Label>
           <Col sm={10}>
             <Input type="name" name="password" id="examplePassword" placeholder="Seu Nome" />
           </Col>
         </FormGroup>
+        <FormGroup tag="fieldset" row>
+        <legend className="col-form-label col-sm-2">Você deseja:</legend>
+        <Col sm={10}>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="radio2" />{' '}
+              Receber informações sobre novos eventos
+            </Label>
+          </FormGroup>
+          <FormGroup check>
+            <Label check>
+              <Input type="radio" name="radio2" />{' '}
+              Cadastrar um evento
+            </Label>
+          </FormGroup>
+        </Col>
+      </FormGroup>
         <FormGroup>
-        <Label for="exampleSelectMulti">Select Multiple</Label>
+        <Label for="exampleSelectMulti">Área - Evento</Label>
         <Input type="select" name="selectMulti" id="exampleSelectMulti" multiple>
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
+          <option>Tecnologia</option>
+          <option>Ambiental</option>
+          <option>Empreendorismo</option>
+          <option>Saúde</option>
+          <option>Moda</option>
+          <option>Outros</option>
         </Input>
       </FormGroup>
         <FormGroup row>
-          <Label for="exampleText" sm={2}>Text Area</Label>
+          <Label for="exampleText" sm={2}>Algo a mais?</Label>
           <Col sm={10}>
             <Input type="textarea" name="text" id="exampleText" />
           </Col>
         </FormGroup>
         <FormGroup row>
-          <Label for="exampleFile" sm={2}>File</Label>
+          <Label for="exampleFile" sm={2}>Arquivo</Label>
           <Col sm={10}>
             <Input type="file" name="file" id="exampleFile" />
             <FormText color="muted">
               This is some placeholder block-level help text for the above input.
               It's a bit lighter and easily wraps to a new line.
             </FormText>
-          </Col>
-        </FormGroup>
-        <FormGroup tag="fieldset" row>
-          <legend className="col-form-label col-sm-2">Radio Buttons</legend>
-          <Col sm={10}>
-            <FormGroup check>
-              <Label check>
-                <Input type="radio" name="radio2" />{' '}
-                Option one is this and that—be sure to include why it's great
-              </Label>
-            </FormGroup>
-            <FormGroup check>
-              <Label check>
-                <Input type="radio" name="radio2" />{' '}
-                Option two can be something else and selecting it will deselect option one
-              </Label>
-            </FormGroup>
-            <FormGroup check disabled>
-              <Label check>
-                <Input type="radio" name="radio2" disabled />{' '}
-                Option three is disabled
-              </Label>
-            </FormGroup>
           </Col>
         </FormGroup>
         <FormGroup row>

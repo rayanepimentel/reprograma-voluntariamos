@@ -39,10 +39,10 @@ import {
                 <NavLink href="/Sobre">SOBRE</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/Ativos">EVENTOS</NavLink>
+                <NavLink href="/Eventos">EVENTOS</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/Assine">CONTATO</NavLink>
+                <NavLink href="/Contato">CONTATO</NavLink>
               </NavItem>
             
             </Nav>

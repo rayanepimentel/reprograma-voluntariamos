@@ -5,6 +5,7 @@ import Home from './Paginas/Home/Home'
 import Sobre from './Paginas/Sobre/Sobre'
 import Eventos from './Paginas/Eventos/Eventos'
 import Contato from './Paginas/Contato/Contato'
+import NaoEncontrada from './Paginas/NaoEncontrada/NaoEncontrada'
 import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Cabecalho from './Componentes/Navbar/Navbar'
@@ -18,6 +19,7 @@ function App() {
                     <Route path='/Sobre' exact component={Sobre} />
                     <Route path='/Eventos' exact component={Eventos} />
                     <Route path='/Contato' exact component={Contato} />
+                    <Route component={NaoEncontrada} />
                 </Switch>
         
         </div>

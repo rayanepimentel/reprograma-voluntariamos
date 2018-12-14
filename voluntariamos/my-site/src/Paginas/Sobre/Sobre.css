@@ -4,3 +4,57 @@
     padding: 1rem;
     font-size: 1.7rem;
 }
+
+.sobre{
+    padding: 3rem 1rem 0;
+    
+}
+  @media (min-width: 992px) {
+    .secao-sobre {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+  }
+
+  .secao-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 2rem;
+    margin: 0 auto;
+}
+
+.secao-about__titulo {
+    text-align: center;
+    font-family: 'Roboto Slab', Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: #674582;
+}
+
+.secao-about__titulo_esq {
+    margin-right: auto;
+}
+
+.secao-about p {
+    color: #63458a;
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/* .secao-diva__introducao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */
+
+
+
+
+
+.secao-about__historia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0;
+}
