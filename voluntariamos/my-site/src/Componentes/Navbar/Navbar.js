@@ -10,6 +10,8 @@ import {
   } from 'reactstrap';
   import './Navbar.css'
 
+  import { Link } from "react-router-dom"
+
  class Cabecalho extends React.Component {
   constructor(props) {
     super(props);
@@ -33,16 +35,24 @@ import {
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/">HOME</NavLink>
+                <Link to="/">
+                  <NavLink>HOME</NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink href="/Sobre">SOBRE</NavLink>
+                <Link to="/Sobre">
+                  <NavLink>SOBRE</NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink href="/Eventos">EVENTOS</NavLink>
+                <Link to="/Eventos">
+                  <NavLink>EVENTOS</NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink href="/Contato">CONTATO</NavLink>
+                <Link to="/Contato">
+                  <NavLink>CONTATO</NavLink>
+                </Link>
               </NavItem>
             
             </Nav>

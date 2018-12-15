@@ -1,0 +1,9 @@
+.carousel{
+ max-width: 70%;
+ margin: 0 auto;
+ height: calc(100vh - 56px);
+}
+
+.carousel-caption{
+    background-color: #674582;
+}

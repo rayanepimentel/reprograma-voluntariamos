@@ -19,7 +19,7 @@ function Cartao() {
           Horário: 19h - 22h30<br></br>
           Dias: Conforme a demanda.<br></br>
           </CardText>
-          <a href="http://reprograma.com.br" target="_blank" >
+          <a href="http://reprograma.com.br" rel="noopener noreferrer" target="_blank" >
           <Button className='button'>Increva-se</Button></a>
         </CardBody>
       </Card>
@@ -33,7 +33,7 @@ function Cartao() {
           <CardText>Local: Vários pontos da cidade de SP<br></br>
           Horário: Escolhido na inscrição<br></br>
           Dia(s): 23 - 26 de Agosto 2019<br></br></CardText>
-          <a href="https://www.viradasustentavel.org.br/conteudos/sao-paulo.html" target="_blank" >
+          <a href="https://www.viradasustentavel.org.br/conteudos/sao-paulo.html" rel="noopener noreferrer"target="_blank" >
           <Button className='button'>Increva-se</Button></a>
         </CardBody>
       </Card>
@@ -47,7 +47,7 @@ function Cartao() {
           <CardText>Local: Teatro São Paulo<br></br>
           Horário: 08h - 17h30<br></br>
           Dia(s): 10 de dezembro<br></br></CardText>
-          <a href="https://www.ted.com" target="_blank" >
+          <a href="https://www.ted.com" rel="noopener noreferrer" target="_blank" >
           <Button className='button'>Increva-se</Button></a>
         </CardBody>
       </Card>

@@ -5,7 +5,7 @@ import './Home.css';
 
 
 function Home(){
-  return( <Carousel></Carousel>
+  return( <Carousel className="Demo"></Carousel>
     
 )
  
