@@ -1,7 +1,7 @@
 name: OWASP ZAP Cron Job
 on:
   schedule:
-    - cron: '10 15 * * *'
+    - cron: '30 15 * * *'
 jobs:
   dast:
     runs-on: ubuntu-latest
@@ -9,7 +9,7 @@ jobs:
       - name: Checkout código
         uses: actions/checkout@v2
       - name: Executar OWASP ZAP
-        uses: owasp/zap-action@v1
+        uses: zaproxy/action-baseline@v0.7.0
         with:
           target: https://voluntariamos.netlify.app/
           zap-target-params: "-config globalexcludeurl.url_list.url.regex=.*logout.*"
